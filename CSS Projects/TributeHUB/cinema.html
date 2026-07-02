@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./tribute.css">
+    <title>Tribute Hub</title>
+</head>
+
+<body class="cinema-page" data-person="charlie-chaplin" >
+    <header class="page-header">
+        <h1>Cinema</h1>
+        <p class="tribute-counter">
+            Tributes: <span id="tribute-count">0</span> 🕯️
+        </p>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+            <h2>Charlie Chaplin</h2>
+            <p class="lifespan">1889-1977</p>
+
+            <blockquote>
+                "A day without laughter is a day wasted."
+            </blockquote>
+            </div>
+            <figure class="hero-image">
+        <img src="./images/charlie.jpg"
+             alt="Portrait of Charlie Chaplin">
+
+        <figcaption>Charlie Chaplin</figcaption>
+    </figure>
+        </section>
+        <article class="tribute-article">
+            <section class="about">
+                <h3>About</h3>
+                <p>Charlie Chaplin was an English actor, filmmaker, composer, and comedian whose contributions shaped
+                    the early history of cinema. Born in London in 1889, Chaplin rose from poverty to become one of the
+                    most recognizable figures in entertainment history.
+
+                    Through his iconic character, The Tramp, Chaplin blended humor with deep social commentary,
+                    portraying themes of inequality, industrialization, and human dignity. His films demonstrated that
+                    silent cinema could communicate universal emotions without the need for spoken language.
+
+                    Works such as Modern Times, City Lights, and The Great Dictator continue to influence filmmakers
+                    worldwide. Chaplin's artistry proved that cinema could be both entertaining and profoundly
+                    meaningful, securing his place among the greatest creative minds of all time.
+
+                    These are substantial enough to form a proper About section while leaving room for separate
+                    Contributions and Legacy sections on each page.</p>
+            </section>
+            <section class="contributions">
+                <h3>Contributions</h3>
+                <ul>
+                    <li>The Kid</li>
+                    <li>City Lights</li>
+                    <li>Modern Times</li>
+                    <li>The Great Dictator</li>
+                </ul>
+            </section>
+            <section class="legacy">
+                <h3>Legacy</h3>
+                <p>His influence on filmmaking and comedy remains unmatched.</p>
+            </section>
+        </article>
+
+        <section class="tribute-section">
+            <button id="tribute-btn" class="tribute-btn">
+                Pay Tribute 🕯️
+            </button>
+        </section>
+    </main>
+    <footer>
+        <blockquote>
+            "Great lives continue to inspire long after they are gone."
+        </blockquote>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="./tribute.js"></script>
+</body>
+
+</html>

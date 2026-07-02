@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    font-family: "Inter",sans-serif;
+    color: #f8fafc;
+   background: linear-gradient(
+    135deg,
+    #020617 0%,
+    #0f172a 50%,
+    #1e293b 100%
+);
+position: relative;  
+}
+.hero-quote{
+    margin-top: 2rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    font-style: italic;
+
+    color: #94a3b8;
+}
+.site-header {
+    padding: 2rem 0;
+    text-align: center;
+}
+.site-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 5.5rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.08);
+}
+.hero {
+    min-height: calc(100vh - 150px);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 0 2rem;
+}
+.hero-text {
+    max-width: 800px;
+
+    font-size: 1.8rem;
+    line-height: 1.8;
+
+    font-weight: 300;
+
+    color: #e2e8f0;
+}
+.explore-text {
+    margin-top: 4rem;
+
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+
+    color: #cbd5e1;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.explore-text:hover {
+    color: #ffffff;
+    transform: translateY(5px);
+}
+.cards{
+    padding: 5rem 8%;
+}
+.cards h2{
+    font-family: "Playfair Display",serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #cbd5e1;
+    margin-bottom: 4rem;
+}
+.card-container {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+    );
+
+    gap: 2rem;
+}
+.card {
+    height: 250px;
+
+    background-color: rgba(15, 23, 42, 0.8);
+
+    border: 1px solid rgba(148, 163, 184, 0.15);
+
+    border-radius: 20px;
+
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+.card h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+
+    text-align: center;
+
+    color: #f8fafc;
+
+    margin-bottom: 1.5rem;
+}
+.card p {
+    text-align: center;
+
+    font-size: 1rem;
+    line-height: 1.7;
+
+    color: #94a3b8;
+}
+.card:hover {
+    transform: translateY(-10px);
+
+    border-color: rgba(148, 163, 184, 0.4);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.4);
+}
+footer {
+    padding: 4rem 2rem;
+
+    text-align: center;
+}
+footer blockquote {
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.3rem;
+    font-style: italic;
+
+    color: #94a3b8;
+
+    max-width: 700px;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+
+    .site-header h1 {
+        font-size: 3rem;
+        letter-spacing: 0.4rem;
+    }
+
+    .hero-text {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+
+    .hero-quote {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .explore-text {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .cards h2 {
+        font-size: 2rem;
+    }
+
+    .card {
+        height: 220px;
+        padding: 1.5rem;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+}

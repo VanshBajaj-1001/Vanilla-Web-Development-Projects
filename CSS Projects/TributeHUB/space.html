@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./tribute.css">
+    <title>Tribute Hub</title>
+</head>
+
+<body class="space-page" data-person="neil-armstrong" >
+    <header class="page-header">
+        <h1>Space</h1>
+        <p class="tribute-counter">
+            Tributes: <span id="tribute-count">0</span> 🕯️
+        </p>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+            <h2>Neil Armstrong</h2>
+            <p class="lifespan">1930-2012</p>
+
+            <blockquote>
+                "That's one small step for man, one giant leap for mankind."
+            </blockquote>
+            </div>
+            <figure class="hero-image">
+        <img src="./images/neil.jpg"
+             alt="Portrait of Neil">
+
+        <figcaption>Neil Armstrong</figcaption>
+    </figure>
+        </section>
+        <article class="tribute-article">
+            <section class="about">
+                <h3>About</h3>
+                <p>Neil Armstrong was an American astronaut, naval aviator, and aerospace engineer best known as the
+                    first human being to walk on the Moon. Born in Ohio in 1930, Armstrong developed a fascination with
+                    aviation early in life and earned his pilot's license before obtaining a driver's license.
+
+                    After serving as a naval pilot, he joined NASA and participated in several pioneering space
+                    missions. His calm demeanor, technical expertise, and leadership made him a trusted figure during
+                    one of humanity's greatest scientific endeavors.
+
+                    On July 20, 1969, Armstrong stepped onto the lunar surface during the Apollo 11 mission, uttering
+                    the historic words, "That's one small step for man, one giant leap for mankind." His achievement
+                    became a defining moment in human history and symbolized humanity's spirit of exploration.</p>
+            </section>
+            <section class="contributions">
+                <h3>Contributions</h3>
+                <ul>
+                    <li>Gemini 8 mission</li>
+                    <li>Apollo 11 commander</li>
+                    <li>Aerospace engineering and education</li>
+                </ul>
+            </section>
+            <section class="legacy">
+                <h3>Legacy</h3>
+                <p>His achievements symbolize humanity's spirit of exploration</p>
+            </section>
+        </article>
+
+        <section class="tribute-section">
+            <button id="tribute-btn" class="tribute-btn">
+                Pay Tribute 🕯️
+            </button>
+        </section>
+    </main>
+    <footer>
+        <blockquote>
+            "Great lives continue to inspire long after they are gone."
+        </blockquote>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="./tribute.js"></script>
+</body>
+
+</html>

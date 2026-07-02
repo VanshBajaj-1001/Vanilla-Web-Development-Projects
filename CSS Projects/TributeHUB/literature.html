@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./tribute.css"> 
+    <title>Tribute Hub</title>
+</head>
+
+<body  class="literature-page" data-person="william-shakespeare">
+    <header class="page-header">
+        <h1>Literature</h1>
+        <p class="tribute-counter">
+            Tributes: <span id="tribute-count">0</span> 🕯️
+        </p>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+            <h2>William Shakespeare</h2>
+            <p class="lifespan">1564-1616</p>
+
+            <blockquote>
+                "All the world's a stage, and all the men and women merely players."
+            </blockquote>
+            </div>
+            <figure class="hero-image">
+        <img src="./images/shakespeare.jpg"
+             alt="Portrait of William Shakespeare">
+
+        <figcaption>William Shakespeare</figcaption>
+    </figure>
+        </section>
+        <article class="tribute-article">
+            <section class="about">
+                <h3>About</h3>
+                <p>William Shakespeare, born in Stratford-upon-Avon in 1564, is widely regarded as the greatest
+                    playwright and poet in the English language. His works explore universal themes such as love,
+                    ambition, betrayal, power, and human nature, allowing them to remain relevant centuries after they
+                    were written.
+
+                    Over his lifetime, Shakespeare produced an extraordinary collection of tragedies, comedies, and
+                    historical dramas. Masterpieces like Hamlet, Macbeth, Othello, and Romeo and Juliet continue to be
+                    studied, adapted, and performed across the globe.
+
+                    His influence extends beyond literature itself. Shakespeare introduced countless words and
+                    expressions into the English language and shaped storytelling traditions that continue to inspire
+                    writers, filmmakers, and artists worldwide.</p>
+            </section>
+            <section class="contributions">
+                <h3>Contributions</h3>
+                <ul>
+                    <li>Authored Hamlet, Macbeth, Othello, and Romeo and Juliet</li>
+                    <li>Expanded the English language</li>
+                    <li>Mastered tragedy, comedy, and historical drama</li>
+                </ul>
+            </section>
+            <section class="legacy">
+                <h3>Legacy</h3>
+                <p>His works remain among the most studied and performed in history.</p>
+            </section>
+        </article>
+
+        <section class="tribute-section">
+            <button id="tribute-btn" class="tribute-btn">
+                Pay Tribute 🕯️
+            </button>
+        </section>
+    </main>
+    <footer>
+        <blockquote>
+            "Great lives continue to inspire long after they are gone."
+        </blockquote>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="./tribute.js"></script>
+</body>
+
+</html>
