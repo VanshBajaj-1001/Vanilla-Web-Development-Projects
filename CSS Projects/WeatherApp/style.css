@@ -11,6 +11,9 @@ body{
     align-items:center;
     background:linear-gradient(135deg,#4facfe,#00f2fe);
 }
+#condition{
+    text-transform: capitalize;
+}
 .container{
     width:360px;
     padding:30px;
