@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="search-box">
+            <input type="text" id="city" placeholder="Enter City">
+            <button id="searchBtn">Search</button>
+        </div>
+        <p id="errorMessage"></p>
+        <div class="weather">
+            <img id="weatherIcon" src="https://cdn-icons-png.flaticon.com/512/869/869869.png" width="110">
+            <h2 id="cityName">City Name</h2>
+            <h1 id="temperature">--°C</h1>
+            <p id="condition">Weather Condition</p>
+            <div class="details">
+                <div>
+                    💧
+                    <span id="humidity">--</span>%
+                </div>
+                <div>
+                    🌬
+                    <span id="wind">
+                        --
+                    </span> km/h
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="weather.js"></script>
+</body>
+
+</html>
