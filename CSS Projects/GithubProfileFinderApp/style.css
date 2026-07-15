@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:"Inter",sans-serif;
+    background:#0d1117;
+    color:#f0f6fc;
+    min-height:100vh;
+}
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:50px auto;
+}
+header{
+    text-align:center;
+    margin-bottom:40px;
+}
+header h1{
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:10px;
+}
+header p{
+    color:#8b949e;
+    font-size:1rem;
+}
+.search-section{
+    margin-bottom:40px;
+}
+#search-form{
+    display:flex;
+    gap:15px;
+}
+#search-input{
+    flex:1;
+    padding:16px 20px;
+    background:#161b22;
+    border:1px solid #30363d;
+    border-radius:12px;
+    color:#f0f6fc;
+    font-size:16px;
+    font-family:inherit;
+    outline:none;
+    transition:all .3s ease;
+}
+#search-input::placeholder{
+    color:#8b949e;
+}
+#search-input:focus{
+    border-color:#58a6ff;
+    box-shadow:0 0 0 4px rgba(88,166,255,.15);
+}
+#search-form button{
+    padding:16px 28px;
+    background:#238636;
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:600;
+    font-family:inherit;
+    cursor:pointer;
+    transition:all .3s ease;
+}
+#search-form button:hover{
+    background:#2ea043;
+    transform:translateY(-2px);
+}
+.profile-card{
+    background:#161b22;
+    border:1px solid #30363d;
+    border-radius:18px;
+    padding:30px;
+    display:flex;
+    gap:30px;
+    align-items:center;
+    margin-bottom:35px;
+}
+.profile-card img{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #58a6ff;
+}
+.profile-info{
+    flex:1;
+}
+.profile-info h2{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+.profile-info p{
+    color:#8b949e;
+    margin-bottom:25px;
+    line-height:1.6;
+}
+.stats{
+    display:flex;
+    gap:40px;
+    margin-bottom:30px;
+}
+.stats div{
+    text-align:center;
+}
+.stats h3{
+    font-size:1.5rem;
+    color:#58a6ff;
+}
+.stats span{
+    color:#8b949e;
+    font-size:.9rem;
+}
+.profile-info a{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:#238636;
+    padding:12px 22px;
+    border-radius:10px;
+    transition:.3s;
+}
+.profile-info a:hover{
+    background:#2ea043;
+}
+.repo-card{
+    background:#161b22;
+    border:1px solid #30363d;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:15px;
+    transition:.3s;
+}
+.repo-card:hover{
+    border-color:#58a6ff;
+    transform:translateY(-3px);
+}
+.repo-card h3{
+    color:#58a6ff;
+    font-size:1.1rem;
+}
+#repos-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:20px;
+}
+.repo-card{
+    background:#161b22;
+    border:1px solid #30363d;
+    border-radius:14px;
+    padding:20px;
+    transition:.3s;
+}
+.repo-card:hover{
+    transform:translateY(-5px);
+    border-color:#58a6ff;
+}
+.repo-card h3{
+    color:#58a6ff;
+    margin-bottom:10px;
+    font-size:1.2rem;
+}
+.repo-card p{
+    color:#8b949e;
+    line-height:1.5;
+    margin-bottom:20px;
+    min-height:48px;
+}
+.repo-details{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+    color:#c9d1d9;
+    font-size:.9rem;
+}
+.repo-card a{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:#238636;
+    padding:10px 18px;
+    border-radius:8px;
+    transition:.3s;
+}
+.repo-card a:hover{
+    background:#2ea043;
+}
+.error{
+    background:#161b22;
+    border:1px solid #da3633;
+    border-radius:12px;
+    padding:30px;
+    text-align:center;
+}
+
+.rror h2{
+    color:#f85149;
+    margin-bottom:10px;
+}
+.error p{
+    color:#8b949e;
+}
+@media(max-width:768px){
+    #search-form{
+        flex-direction:column;
+    }
+    .profile-card{
+        flex-direction:column;
+        text-align:center;
+    }
+    .stats{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+}
